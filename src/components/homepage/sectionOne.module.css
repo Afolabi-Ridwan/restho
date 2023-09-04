@@ -135,7 +135,7 @@
 
   .sectionOne .container {
     display: flex;
-    height: auto;
+    /* height: 70vw; */
   }
 }
 
