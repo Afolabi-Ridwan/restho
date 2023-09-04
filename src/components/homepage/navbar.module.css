@@ -18,7 +18,9 @@ img {
 }
 
 .header .container.scrolled {
-  transform: translateY(-50%);
+  /* transform: translateY(-53%); */
+  position: fixed;
+  top: 0;
 }
 
 .header .headerLogo {
@@ -209,8 +211,6 @@ img {
   .header .mobileNavbar .number p:first-of-type {
     color: var(--creamish);
     font-family: var(--fontJost);
-
-    /* font-weight: bold; */
   }
 
   .header .mobileNavbar .number p:last-of-type {
@@ -228,5 +228,8 @@ img {
 @media (max-width: 500px) {
   .header .booking p {
     display: none;
+  }
+  .header .container {
+    padding: 10px 0;
   }
 }

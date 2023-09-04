@@ -10,7 +10,7 @@ import {
 import { useState, useEffect } from "react";
 
 function Navbar() {
-  const [state, updateState] = useState(false);
+  const [state, updateState] = useState(true);
 
   function displayMenuHandler() {
     updateState(false);
@@ -90,7 +90,6 @@ function Navbar() {
                 <FontAwesomeIcon icon={faChevronDown} />
               </span>
             </li>
-
           </ul>
         </div>
         <div className={style.booking}>
@@ -141,7 +140,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

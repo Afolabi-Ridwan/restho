@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import "./middleText.css";
 import firstImage from "../images/sub-title-vec.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons";
 
 function MiddleText() {
-  const [isVisible, setIsVisible] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsVisible(!isVisible);
-  //   }, 1500);
-
-  //   return () => clearTimeout(timer);
-  // }, [isVisible]);
-
-  const fadeClass = isVisible ? "fade-in" : "fade-out";
 
   return (
-    <div className={`fade-container ${fadeClass}`}>
+    <div className={`fade-container`}>
       <p>
         {" "}
         <img

@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <HomePage />
 
-      <FirstSession />
+      <div className="firstSession">
+        <FirstSession />
+      </div>
     </div>
   );
 }

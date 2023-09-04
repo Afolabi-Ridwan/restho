@@ -27,7 +27,7 @@ function SectionOne() {
       <div className={style.imageContainer}>
         <div className={style.leftImageRoller}>
           <img className={style.unionLeft} src={unionLeft} alt="js" />
-          <img className={style.leftImage} src={firstImage} alt="kls" />
+          <img className={style.leftImage} src={secondImage} alt="kls" />
         </div>
 
         <div className={style.rightImageRoller}>
