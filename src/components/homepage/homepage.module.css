@@ -1,0 +1,57 @@
+.homePage {
+  background-color: var(--greenBlack);
+}
+
+.homePage .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: var(--greenBlack);
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-bottom: 0.5px solid rgb(177, 142, 67, 0.2);
+}
+
+.homePage .header .flexOne span {
+  color: var(--creamish);
+}
+
+.homePage .header .flexTwo {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homePage .header .flexTwo .icon {
+  margin-right: 5px;
+  color: var(--creamish);
+  font-size: 14px;
+}
+
+.homePage .header .flexOne p {
+  cursor: pointer;
+  font-family: var(--fontJost);
+}
+.homePage .header .flexTwo p {
+  cursor: pointer;
+  font-family: var(--fontJost);
+}
+
+.homePage .header .flexTwo p:hover .icon {
+  color: white;
+}
+
+.homePage .header .flexTwo p:hover {
+  color: var(--creamish);
+}
+
+@media (max-width: 818px) {
+  .homePage .header .flexTwo {
+    display: none;
+  }
+
+  .homePage .header {
+    justify-content: center;
+  }
+}

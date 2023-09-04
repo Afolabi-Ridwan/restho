@@ -1,0 +1,232 @@
+img {
+  width: 150px;
+}
+
+.header .container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0px;
+  background-color: var(--greenBlack);
+  color: white;
+  z-index: 500;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header .container.scrolled {
+  transform: translateY(-50%);
+}
+
+.header .headerLogo {
+  margin-left: 20px;
+}
+
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header .navbar ul li {
+  margin-left: 30px;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+  font-family: var(--fontJost);
+}
+
+.header .navbar ul li:hover {
+  color: var(--creamish);
+}
+
+.header .booking {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header .booking:hover p {
+  background-color: white;
+  color: var(--creamish);
+}
+
+.header .booking p {
+  padding: 13px 0;
+  padding-left: 30px;
+  font-family: var(--fontJost);
+  padding-right: 30px;
+  background-color: var(--creamish);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 500;
+  transition: ease-in-out 0.5s;
+  text-transform: capitalize;
+}
+
+.header .booking i {
+  font-size: 22px;
+  margin-left: 20px;
+  display: none;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.header .mobileNavbar {
+  display: none;
+}
+
+.header .home {
+  display: block;
+  background-color: rgb(3, 13, 39);
+  position: absolute;
+  right: 850px;
+  margin-top: 90px;
+  width: 150px;
+  padding-left: 50px;
+  color: white;
+}
+
+@media (max-width: 818px) {
+  .header .navbar ul li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 958px) {
+  .header .navbar ul li {
+    font-size: 12px;
+  }
+
+  .header .booking p {
+    font-size: 12px;
+  }
+  .header .navbar {
+    display: none;
+  }
+
+  .header .mobileNavbar {
+    display: block;
+    background-color: rgb(3, 13, 39);
+    position: absolute;
+    z-index: 500;
+    height: 100vh;
+    top: 0;
+    width: 300px;
+    transform: translateX(-300px);
+    transition: ease-in-out 0.5s;
+  }
+
+  .header .mobileNavbar.active {
+    transform: translateX(0);
+  }
+
+  .header .mobileNavbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .mobileNavbar .logo p {
+    font-size: 25px;
+    color: white;
+  }
+
+  .header .mobileNavbar img {
+    margin: 30px;
+    width: 180px;
+  }
+
+  .header .mobileNavbar li {
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    width: 230px;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+    font-family: var(--fontJost);
+  }
+
+  .header .mobileNavbar li:hover {
+    color: var(--creamish);
+  }
+
+  .header .mobileNavbar li:hover span {
+    color: var(--creamish);
+  }
+
+  .header .mobileNavbar li span {
+    position: absolute;
+    color: white;
+    right: 0;
+    font-family: var(--fontJost);
+  }
+
+  .header .mobileNavbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .header .mobileNavbar .callNow {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .header .mobileNavbar .callNow:hover p:last-of-type {
+    color: var(--creamish);
+    font-family: var(--fontJost);
+  }
+
+  .header .mobileNavbar .phone {
+    border-radius: 100%;
+    border: 2px solid var(--creamish);
+    padding: 10px 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--creamish);
+  }
+
+  .header .mobileNavbar .callNow .number {
+    margin: 0 10px;
+  }
+
+  .header .mobileNavbar .number p:first-of-type {
+    color: var(--creamish);
+    font-family: var(--fontJost);
+
+    /* font-weight: bold; */
+  }
+
+  .header .mobileNavbar .number p:last-of-type {
+    color: white;
+    font-family: var(--fontJost);
+
+    transition: ease-in-out 0.5s;
+  }
+
+  .header .booking i {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .booking p {
+    display: none;
+  }
+}

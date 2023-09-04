@@ -1,0 +1,84 @@
+.fade-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-out;
+  /* margin-top: 300px; */
+  text-align: center;
+  max-width: 700px;
+}
+
+.fade-container p:first-of-type {
+  color: var(--creamish);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-container p:first-of-type .icon {
+  width: 20px;
+}
+
+.fade-container h1 {
+  font-size: 55px;
+  color: white;
+  margin-top: -10px;
+  z-index: 100;
+}
+
+.fade-container p:last-of-type {
+  color: white;
+  font-size: 14px;
+  font-family: var(--fontJost);
+
+  /* margin-top: -10px; */
+}
+
+.fade-container h4 {
+  color: white;
+  padding: 10px 40px;
+  border: 1px solid var(--creamish);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  font-family: var(--fontJost);
+  letter-spacing: 0.3px;
+  margin-top: 20px;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.fade-container h4:hover {
+  background-color: var(--creamish);
+}
+
+.fade-container h4 span {
+  border: 1px white solid;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 4px;
+}
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 818px) {
+  .fade-container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .fade-container {
+    max-width: 90vw;
+  }
+
+  .fade-container h1 {
+    font-size: 35px;
+  }
+}

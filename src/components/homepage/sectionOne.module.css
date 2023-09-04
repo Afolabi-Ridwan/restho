@@ -1,0 +1,191 @@
+.sectionOne .container {
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.sectionOne .container .leftImageRoller {
+  position: relative;
+}
+
+.sectionOne .container .leftImageRoller .unionLeft {
+  width: 220px;
+}
+
+.sectionOne .container .leftImageRoller .leftImage {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  width: 160px;
+}
+
+.sectionOne .container .rightImageRoller {
+  position: relative;
+}
+
+.sectionOne .container .rightImageRoller .unionRight {
+  width: 220px;
+}
+
+.sectionOne .container .rightImageRoller .rightImage {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  width: 160px;
+}
+
+.sectionOne .imageContainer {
+  display: none;
+}
+
+.sectionOne .bowlIcon {
+  color: rgb(177, 142, 67, 0.2);
+  font-size: 100px;
+  position: fixed;
+  top: 200px;
+  left: 350px;
+}
+
+.sectionOne .utensilsIcon {
+  color: rgb(177, 142, 67, 0.2);
+
+  font-size: 100px;
+  position: fixed;
+  bottom: 120px;
+  right: 450px;
+}
+
+.sectionOne .socialHandle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionOne .socialHandle ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.sectionOne .socialHandle ul li:first-of-type {
+  list-style: none;
+}
+
+.sectionOne .socialHandle ul li {
+  margin-left: 5px;
+  color: rgb(245, 245, 245, 0.6);
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.sectionOne .socialHandle ul li:hover {
+  color: var(--creamish);
+}
+
+@media (max-width: 818px) {
+  .sectionOne .container .leftImageRoller {
+    display: none;
+  }
+
+  .sectionOne .imageContainer {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sectionOne .imageContainer .leftImageRoller {
+    position: relative;
+  }
+
+  .sectionOne .imageContainer .leftImageRoller .unionLeft {
+    width: 220px;
+  }
+
+  .sectionOne .imageContainer .leftImageRoller .leftImage {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    width: 160px;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller {
+    position: relative;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller .unionRight {
+    width: 220px;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller .rightImage {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 160px;
+  }
+
+  .sectionOne .container .rightImageRoller {
+    display: none;
+  }
+
+  .sectionOne .container {
+    justify-content: center;
+  }
+
+  .sectionOne .container {
+    display: flex;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectionOne .imageContainer .leftImageRoller {
+    position: relative;
+  }
+
+  .sectionOne .imageContainer .leftImageRoller .unionLeft {
+    width: 170px;
+  }
+
+  .sectionOne .imageContainer .leftImageRoller .leftImage {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    width: 120px;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller {
+    position: relative;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller .unionRight {
+    width: 170px;
+  }
+
+  .sectionOne .imageContainer .rightImageRoller .rightImage {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 120px;
+  }
+
+  .sectionOne .bowlIcon {
+    top: 150px;
+    left: 50px;
+  }
+
+  .sectionOne .utensilsIcon {
+    bottom: 120px;
+    right: 100px;
+  }
+
+  .sectionOne .socialHandle ul {
+    width: 220px;
+    /* margin-right: 0px; */
+  }
+
+  .sectionOne .socialHandle ul li {
+    font-size: 12px;
+  }
+}
