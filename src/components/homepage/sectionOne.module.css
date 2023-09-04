@@ -71,7 +71,7 @@
   margin-right: 50px;
 }
 
-.sectionOne .socialHandle ul li:first-of-type {
+.sectionOne .socialHandle ul li {
   list-style: none;
 }
 
@@ -180,7 +180,7 @@
   }
 
   .sectionOne .utensilsIcon {
-    bottom: 390px;
+    bottom: 310px;
     right: 100px;
   }
 

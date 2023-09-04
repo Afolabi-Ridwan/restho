@@ -1,0 +1,31 @@
+.secondSession {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.secondSession .header p {
+  color: var(--creamish);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondSession .header p span img {
+  width: 20px;
+}
+
+.secondSession .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secondSession .header h1 {
+  margin-top: -20px;
+  font-size: 50px;
+}
