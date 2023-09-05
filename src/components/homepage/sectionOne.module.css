@@ -139,11 +139,15 @@
 
   .sectionOne .container {
     display: flex;
-    height: auto;
+    height: 75vw;
   }
 }
 
 @media (max-width: 500px) {
+  .sectionOne .imageContainer {
+    margin-top: 50px;
+  }
+
   .sectionOne .imageContainer .leftImageRoller {
     position: relative;
   }
@@ -175,13 +179,15 @@
   }
 
   .sectionOne .bowlIcon {
-    top: 150px;
-    left: 50px;
+    /* top: 150px;
+    left: 50px; */
+    display: none;
   }
 
   .sectionOne .utensilsIcon {
-    bottom: 310px;
-    right: 100px;
+    /* bottom: 310px;
+    right: 100px; */
+    display: none;
   }
 
   .sectionOne .socialHandle ul {

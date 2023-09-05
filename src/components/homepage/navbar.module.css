@@ -116,7 +116,7 @@ img {
   .header .mobileNavbar {
     display: block;
     background-color: rgb(3, 13, 39);
-    position: absolute;
+    position: fixed;
     z-index: 500;
     height: 100vh;
     top: 0;
@@ -195,7 +195,7 @@ img {
   .header .mobileNavbar .phone {
     border-radius: 100%;
     border: 2px solid var(--creamish);
-    padding: 10px 10px;
+    padding: 25px 10px;
     height: 30px;
     display: flex;
     align-items: center;

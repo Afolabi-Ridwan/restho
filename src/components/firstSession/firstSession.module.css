@@ -1,5 +1,13 @@
 .firstSession {
   margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 0 50px; */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .firstSession .header p img {
@@ -7,7 +15,6 @@
 }
 
 .firstSession .header {
-  margin-left: 50px;
 }
 
 .firstSession .header p {
@@ -32,9 +39,9 @@
 .firstSession .body {
   width: 100%;
   display: flex;
-  /* align-items: center; */
+  /* align-items: center;
   justify-content: center;
-  padding: 0 50px;
+  padding: 0 50px; */
 }
 
 .firstSession .body .chefOne {
@@ -99,7 +106,7 @@
 .firstSession .body .flexTwo {
   display: flex;
   flex-direction: column;
-  max-width: 80vw;
+  max-width: 100%;
 }
 
 .firstSession .body .lists {
@@ -164,11 +171,16 @@
 
 .firstSession .body .commentTab .thirdImage {
   width: 17vw;
-  transform: translate(80px, -80px);
+  transform: translate(100px, 0px);
   border-radius: 10px;
 }
 
 @media (max-width: 818px) {
+  .firstSession {
+    flex-direction: column;
+    /* padding: 0;
+    margin: 0; */
+  }
   .firstSession .header h1 {
     font-size: 30px;
     /* width */
@@ -178,7 +190,7 @@
   }
 
   .firstSession .body .chefOne {
-    width: 80vw;
+    width: 100%;
   }
 
   .firstSession .body .commentTab .thirdImage {
@@ -186,35 +198,58 @@
   }
 
   .firstSession .body .commentTab div p {
-    width: 90%;
+    width: 100%;
   }
 
   .firstSession .body .flexTwo .infoOne {
     margin-top: 10px;
   }
 
-  .firstSession .body .flexTwo .infoOne .note p {
+  /* .firstSession .body .flexTwo .infoOne .note p {
     margin-left: 50px;
-  }
+  } */
 
   .firstSession .header {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 }
 
 @media (max-width: 500px) {
   .firstSession .body .flexTwo .infoOne {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .firstSession .body .flexTwo .infoOne .note p {
     width: 100%;
     margin-left: 0px;
     margin-top: 20px;
-    text-align: center;
   }
 
   .firstSession .header {
-    margin-left: 30px;
+    margin-left: 0;
+  }
+
+  .firstSession .body .lists {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .firstSession .body .lists .secondList {
+    margin-top: -20px;
+  }
+
+  .firstSession .body .flexTwo .infoOne {
+    margin-left: 0;
+  }
+
+  .firstSession .body .lists ul li {
+    margin-left: -40px;
+  }
+
+  .firstSession .body .commentTab {
+    margin-left: 0;
   }
 }

@@ -81,7 +81,7 @@ function FirstSession() {
               </ul>
             </div>
 
-            <div>
+            <div className={style.secondList}>
               <ul>
                 <li>
                   {" "}
