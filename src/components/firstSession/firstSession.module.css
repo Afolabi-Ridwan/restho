@@ -1,20 +1,14 @@
 .firstSession {
-  margin-top: 80px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* padding: 0 50px; */
   padding-left: 50px;
   padding-right: 50px;
 }
 
 .firstSession .header p img {
   width: 20px;
-}
-
-.firstSession .header {
 }
 
 .firstSession .header p {
@@ -29,6 +23,7 @@
   font-family: var(--fontJost);
   font-weight: 500;
   font-size: 20px;
+  /* font-weight: 600; */
 }
 
 .firstSession .header h1 {
@@ -39,9 +34,6 @@
 .firstSession .body {
   width: 100%;
   display: flex;
-  /* align-items: center;
-  justify-content: center;
-  padding: 0 50px; */
 }
 
 .firstSession .body .chefOne {
@@ -178,12 +170,9 @@
 @media (max-width: 818px) {
   .firstSession {
     flex-direction: column;
-    /* padding: 0;
-    margin: 0; */
   }
   .firstSession .header h1 {
     font-size: 30px;
-    /* width */
   }
   .firstSession .body {
     flex-direction: column;
@@ -204,17 +193,12 @@
   .firstSession .body .flexTwo .infoOne {
     margin-top: 10px;
   }
-
-  /* .firstSession .body .flexTwo .infoOne .note p {
-    margin-left: 50px;
-  } */
-
-  .firstSession .header {
-    /* margin-left: 30px; */
-  }
 }
 
 @media (max-width: 500px) {
+  .firstSession {
+    padding: 0 20px;
+  }
   .firstSession .body .flexTwo .infoOne {
     flex-direction: column;
     justify-content: flex-start;
@@ -251,5 +235,9 @@
 
   .firstSession .body .commentTab {
     margin-left: 0;
+  }
+
+  .firstSession .body .commentTab div p {
+    font-size: 20px;
   }
 }
