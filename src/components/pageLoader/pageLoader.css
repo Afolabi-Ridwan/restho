@@ -40,3 +40,13 @@
   width: 400px;
   text-align: center;
 }
+
+@media (max-width: 550px) {
+  .loader .count img {
+    width: 250px;
+  }
+
+  .count {
+    font-size: 60px;
+  }
+}

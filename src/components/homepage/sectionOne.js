@@ -15,7 +15,7 @@ function SectionOne() {
           <img className={style.unionLeft} src={unionLeft} alt="js" />
           <img className={style.leftImage} src={secondImage} alt="kls" />
         </div>
-        <div>
+        <div className={style.middleText}>
           <MiddleText />
         </div>
         <div className={style.rightImageRoller}>

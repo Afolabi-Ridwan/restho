@@ -139,13 +139,18 @@
 
   .sectionOne .container {
     display: flex;
-    /* height: 70vh; */
+    height: 45vh;
   }
 }
 
 @media (max-width: 500px) {
   .sectionOne .imageContainer {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+  }
+
+  .sectionOne .middleText {
+    margin-top: -130px;
+    /* margin-bottom: -130px; */
   }
 
   .sectionOne .imageContainer .leftImageRoller {

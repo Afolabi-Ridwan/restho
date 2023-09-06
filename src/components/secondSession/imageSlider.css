@@ -1,6 +1,17 @@
 .imgSliderContainer {
-  max-width: 70%;
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgSlider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .image-slider {
@@ -8,16 +19,133 @@
   transition: transform 1s ease-in-out;
 }
 
+.lastImage {
+  margin-right: -20px;
+}
+
 .slide-out {
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
+  /* animation: slide-out linear 0.5s; */
+}
+
+.imgSlider .leftArrow {
+  margin-right: 50px;
+  color: var(--creamish);
+  border-radius: 50%;
+  border: 2px solid var(--creamish);
+  padding: 5px;
+}
+.imgSlider .rightArrow {
+  margin-left: 50px;
+  color: var(--creamish);
+  border-radius: 50%;
+  border: 2px solid var(--creamish);
+  padding: 5px;
 }
 
 .slide-in {
-  transform: translateX(0%);
+  animation: slide-in linear 3s;
 }
 
-/* Style your images as needed */
 .image-slider img {
   width: 100px; /* Adjust the width as needed */
   height: auto;
+  border-radius: 100%;
+  animation: spin infinite linear 20s;
+  margin-right: 20px;
+}
+
+@media (max-width: 818px) {
+  .image-slider img {
+    width: 70px; /* Adjust the width as needed */
+  }
+
+  .imgSlider .leftArrow {
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .imgSlider .rightArrow {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-slider img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .lastImage {
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-slider img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .lastImage {
+    margin-right: -20px;
+  }
+
+  .imgSlider .leftArrow {
+    font-size: 11px;
+  }
+  .imgSlider .rightArrow {
+    font-size: 11px;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(75%);
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  75% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  75% {
+    transform: translateX(75%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -232,4 +232,8 @@ img {
   .header .container {
     padding: 10px 0;
   }
+
+  .header .container {
+    padding: 15px 0;
+  }
 }

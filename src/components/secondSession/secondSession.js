@@ -1,7 +1,7 @@
 import style from "./secondSession.module.css";
 import firstImage from "../images/sub-title-vec.svg";
 import Tabs from "./tabs";
-// import SliderComponent from "./imageSlider";
+import SliderComponent from "./imageSlider";
 function SecondSession() {
   return (
     <div className={style.secondSession}>
@@ -17,7 +17,7 @@ function SecondSession() {
 
       <Tabs />
 
-      {/* <SliderComponent /> */}
+      <SliderComponent />
     </div>
   );
 }
