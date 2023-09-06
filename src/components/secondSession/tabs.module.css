@@ -135,14 +135,12 @@
   }
 
   .tabs .tab {
-    /* height: ; */
     width: 60vw;
   }
 }
 
 @media (max-width: 500px) {
   .tabs .tab {
-    /* height: ; */
     width: 90vw;
   }
 }

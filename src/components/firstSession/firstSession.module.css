@@ -211,6 +211,10 @@
     margin-top: 20px;
   }
 
+  .firstSession .body .commentTab .hamiltonComment {
+    transform: translate(0px, -20px);
+  }
+
   .firstSession .header {
     margin-left: 0;
   }

@@ -139,7 +139,7 @@
 
   .sectionOne .container {
     display: flex;
-    height: 45vh;
+    height: 65vh;
   }
 }
 
@@ -149,7 +149,7 @@
   }
 
   .sectionOne .middleText {
-    margin-top: -130px;
+    /* margin-top: -130px; */
     /* margin-bottom: -130px; */
   }
 

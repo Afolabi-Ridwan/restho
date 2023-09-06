@@ -57,7 +57,7 @@
 
 @media (max-width: 818px) {
   .image-slider img {
-    width: 70px; /* Adjust the width as needed */
+    width: 80px;
   }
 
   .imgSlider .leftArrow {
@@ -72,7 +72,7 @@
 
 @media (max-width: 500px) {
   .image-slider img {
-    width: 50px;
+    /* width: 100px; */
     margin-right: 10px;
   }
 
@@ -83,7 +83,7 @@
 
 @media (max-width: 400px) {
   .image-slider img {
-    width: 40px;
+    /* width: 40px; */
     margin-right: 10px;
   }
 
