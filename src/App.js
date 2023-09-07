@@ -4,6 +4,8 @@ import FirstSession from "./components/firstSession/firstSession";
 import React, { useState, useEffect } from "react";
 import Loader from "./components/pageLoader/pageLoader";
 import SecondSession from "./components/secondSession/secondSession";
+import ThirdSession from "./components/thirdSession/thirdSession";
+
 function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
 
@@ -22,6 +24,7 @@ function App() {
 
       <FirstSession />
       <SecondSession />
+      <ThirdSession />
     </div>
   );
 }

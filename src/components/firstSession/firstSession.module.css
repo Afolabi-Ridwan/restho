@@ -211,6 +211,14 @@
     margin-top: 20px;
   }
 
+  .firstSession .body .flexTwo .infoOne .ourGoalBoxContainer {
+    margin-top: 30px;
+  }
+
+  .firstSession .body .chefOne {
+    margin-top: 15px;
+  }
+
   .firstSession .body .commentTab .hamiltonComment {
     transform: translate(0px, -20px);
   }
