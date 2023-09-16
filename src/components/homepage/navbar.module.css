@@ -117,7 +117,7 @@ img {
     display: block;
     background-color: rgb(3, 13, 39);
     position: fixed;
-    z-index: 500;
+    z-index: 1000;
     height: 100vh;
     top: 0;
     width: 300px;

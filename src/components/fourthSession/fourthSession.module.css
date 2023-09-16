@@ -1,0 +1,255 @@
+.fourthSession {
+  margin: 40px 0;
+}
+
+.fourthSession .container {
+  display: flex;
+  justify-content: center;
+}
+
+.fourthSession .eachTab {
+  background-color: rgba(240, 240, 240, 0.4);
+  margin: 0 20px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fourthSession .topHeader {
+  margin-top: -20px;
+}
+
+.fourthSession .topHeader h1 {
+  font-size: 40px;
+}
+.fourthSession .eachTab .mealTab {
+  display: flex;
+}
+
+.fourthSession .eachTab .listNo {
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fourthSession .eachTab .mealPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.fourthSession .eachTab .mealPrice .topInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fourthSession .eachTab .mealPrice .topInfo .hr {
+  width: 15vw;
+}
+
+.fourthSession .eachTab .mealPrice .topInfo p:last-of-type {
+  color: var(--creamish);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--fontJost);
+}
+
+.fourthSession .eachTab .mealPrice .topInfo p:first-of-type {
+  font-weight: bold;
+
+  font-size: 21px;
+}
+
+.fourthSession .eachTab .mealPrice .bottomInfo {
+  font-family: var(--fontJost);
+  color: rgb(63, 63, 63);
+}
+
+.fourthSession .eachTab .nb {
+  margin-top: 50px;
+  font-weight: bold;
+  font-family: var(--fontJost);
+  text-align: center;
+}
+
+.fourthSession .eachTab .nb span {
+  color: red;
+  font-weight: bold;
+}
+
+.fourthSession .eachTab .address {
+  font-family: var(--fontJost);
+  color: rgb(63, 63, 63);
+  text-align: center;
+}
+
+.fourthSession .header p {
+  color: var(--creamish);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.fourthSession .header p img {
+  width: 20px;
+}
+
+.fourthSession .header p img:first-of-type {
+  margin-right: 10px;
+}
+
+.fourthSession .header p img:last-of-type {
+  margin-left: 10px;
+}
+
+.fourthSession .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fourthSession .header h1 {
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.fourthSession .sideIcons {
+}
+
+.fourthSession .leftTopSideIcons {
+  position: relative;
+  margin-bottom: -150px;
+  margin-top: -14px;
+}
+.fourthSession .rightTopSideIcons {
+  transform: rotate(90deg);
+  position: relative;
+  margin-bottom: -150px;
+}
+
+.fourthSession .topSideIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -6px -53px 0px -45px;
+}
+
+.fourthSession .leftBottomSideIcons {
+  transform: rotate(270deg);
+  position: relative;
+  /* left: -49px;
+  bottom: -9px; */
+  margin-top: -80px;
+  width: 100px;
+}
+
+.fourthSession .rightBottomSideIcons {
+  transform: rotate(180deg);
+  position: relative;
+  margin-bottom: -10px;
+  margin-top: -80px;
+
+  width: 100px;
+}
+
+.fourthSession .bottomSideIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px -44px -3px -48px;
+}
+
+@media (max-width: 918px) {
+  .fourthSession .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fourthSession .eachTab {
+    margin: 30px 0;
+  }
+
+  .fourthSession .eachTab {
+    width: 90vw;
+  }
+
+  .fourthSession .eachTab .mealPrice {
+    width: 87vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .fourthSession .eachTab .address {
+    font-size: 14px;
+  }
+
+  .fourthSession .eachTab .mealPrice .topInfo {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fourthSession .eachTab .mealPrice .topInfo .hr {
+    width: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fourthSession .eachTab .mealPrice .topInfo .hr {
+    width: 30vw;
+  }
+
+  .fourthSession .eachTab {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .fourthSession .rightTopSideIcons,
+  .fourthSession .leftTopSideIcons {
+    width: 120px;
+  }
+
+  .fourthSession .topSideIcons {
+    margin: -19px -23px 0px -15px;
+  }
+
+  .fourthSession .rightBottomSideIcons {
+    width: 70px;
+    margin-bottom: -6px;
+  }
+  .fourthSession .leftBottomSideIcons {
+    width: 70px;
+  }
+  .fourthSession .bottomSideIcons {
+    margin: 40px -12px -8px -16px;
+  }
+
+  .fourthSession .eachTab .address {
+    /* max-width: 70vw; */
+  }
+
+  .fourthSession .eachTab .mealPrice .topInfo p:first-of-type {
+    font-size: 15px;
+  }
+
+  .fourthSession .eachTab .mealPrice .topInfo p:last-of-type {
+    font-size: 16px;
+  }
+
+  .fourthSession .eachTab .mealPrice .bottomInfo {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .fourthSession .eachTab .listNo {
+    margin-right: 15px;
+    font-size: 15px;
+    transform: translateY(1px);
+  }
+}

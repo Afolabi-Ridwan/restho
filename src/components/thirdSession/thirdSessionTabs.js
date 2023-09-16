@@ -6,7 +6,20 @@ import thirdImage from "./images/populer3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const info = [
+const infoData = [
+  {
+    image: secondImage,
+    priceTage: "$25",
+    rating: [
+      <FontAwesomeIcon icon={faStar} />,
+      <FontAwesomeIcon icon={faStar} />,
+      <FontAwesomeIcon icon={faStar} />,
+      <FontAwesomeIcon icon={faStar} />,
+    ],
+    review: "Review(54)",
+    name: "Beef Machal",
+    note: "It is a long established fact that a reader will be distracted",
+  },
   {
     image: firstImage,
     priceTage: "$10",
@@ -22,7 +35,7 @@ const info = [
     note: "It is a long established fact that a reader will be distracted",
   },
   {
-    image: secondImage,
+    image: thirdImage,
     priceTage: "$18",
     rating: [
       <FontAwesomeIcon icon={faStar} />,
@@ -34,48 +47,64 @@ const info = [
     name: "Thai Soup",
     note: "It is a long established fact that a reader will be distracted",
   },
-  {
-    image: thirdImage,
-    priceTage: "$15",
-    rating: [
-      <FontAwesomeIcon icon={faStar} />,
-      <FontAwesomeIcon icon={faStar} />,
-      <FontAwesomeIcon icon={faStar} />,
-      <FontAwesomeIcon icon={faStar} />,
-    ],
-    review: "Review(20)",
-    name: "Beef Machal",
-    note: "It is a long established fact that a reader will be distracted",
-  },
 ];
 
 function ThirdSessionTabs() {
+  const [info, setInfo] = useState(infoData);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % info.length;
+        if (nextIndex === 0) {
+          setInfo((prevInfo) => [
+            prevInfo[prevInfo.length - 1],
+            ...prevInfo.slice(0, prevInfo.length - 1),
+          ]);
+        }
+        return nextIndex;
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [info]);
+
   return (
-    <div className="tabs">
-      {info.map((eachTab, index) => (
-        <div
-          className={`tabContainer  ${index !== 0 ? "remove" : ""}`}
-          style={index === 1 ? { margin: "0 40px" } : { margin: "0px" }}
-        >
-          <div className="image">
-            <img src={eachTab.image} alt="ss" />
-            <p> {eachTab.priceTage}</p>
-          </div>
+    <div className="tabsSession">
+      <div className="tabs">
+        {info.map((eachTab, index) => (
+          <div
+            className={`tabContainer ${
+              index === currentIndex
+                ? "active"
+                : "" || index === 1 || 2
+                ? "remove"
+                : ""
+            } `}
+            style={index === 1 ? { margin: "0 40px" } : { margin: "0px" }}
+          >
+            <div className="image">
+              <img src={eachTab.image} alt="ss" />
+              <p> {eachTab.priceTage}</p>
+            </div>
 
-          <div className={"tab firstTab"}>
-            <div className="note">
-              {eachTab.rating.map((eachRating) => (
-                <span style={{ color: "var(--creamish)" }}>{eachRating}</span>
-              ))}
-              <span> {eachTab.review}</span>
+            <div className={"tab firstTab"}>
+              <div className="note">
+                {eachTab.rating.map((eachRating) => (
+                  <span style={{ color: "var(--creamish)" }}>{eachRating}</span>
+                ))}
+                <span> {eachTab.review}</span>
 
-              <h1> {eachTab.name}</h1>
+                <h1> {eachTab.name}</h1>
 
-              <p>{eachTab.note}</p>
+                <p>{eachTab.note}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
